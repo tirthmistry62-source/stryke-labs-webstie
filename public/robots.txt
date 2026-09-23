@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://strykelabs.vercel.app/sitemap.xml
