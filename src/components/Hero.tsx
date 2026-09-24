@@ -56,7 +56,7 @@ export function Hero() {
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(1200px 600px at 50% -10%, rgba(212,255,58,0.08), transparent 60%), radial-gradient(900px 500px at 80% 20%, rgba(59,130,246,0.05), transparent 70%), linear-gradient(180deg, #0A0A0B 0%, #0A0A0B 100%)",
+              "radial-gradient(1200px 600px at 50% -10%, rgba(212,255,58,0.08), transparent 60%), radial-gradient(900px 500px at 80% 20%, rgba(59,130,246,0.05), transparent 70%), linear-gradient(180deg, #000000 0%, #000000 100%)",
           }}
         />
         {/* Drifting blobs */}
@@ -108,35 +108,16 @@ export function Hero() {
       </div>
 
       <Container className="relative">
-        {/* Faint brand watermark — right side, below the headline, subtle and non-dominant */}
+        {/* Hanging brand pendant — one connected chain and emblem */}
         <div
           aria-hidden
-          className="pointer-events-none absolute right-[-4%] top-[44%] hidden md:block lg:right-[0%] lg:top-[42%] xl:top-[40%]"
-          style={{
-            transform: `translate(${Math.min(mouse.x * 8, 12)}px, ${Math.min(mouse.y * 8, 12)}px)`,
-            transition: "transform 1.4s cubic-bezier(.2,.7,.2,1)",
-          }}
+          className="pointer-events-none absolute right-[-16%] top-[-12rem] hidden md:block lg:right-[-12%]"
         >
-          <div className="relative">
-            <div
-              className="absolute inset-0 blur-3xl opacity-40"
-              style={{
-                background:
-                  "radial-gradient(closest-side, rgba(94,234,242,0.18), transparent 70%)",
-              }}
-            />
+          <div className={`pendant-swing ${mounted ? "opacity-100" : "opacity-0"}`}>
             <img
-              src="/images/stryke-labs-logo.png"
+              src="/images/stryke-labs-pendant.png"
               alt=""
-              className={`relative w-[260px] lg:w-[340px] xl:w-[400px] mix-blend-screen transition-opacity duration-[1400ms] ${
-                mounted ? "opacity-[0.16]" : "opacity-0"
-              }`}
-              style={{
-                maskImage:
-                  "radial-gradient(circle at 50% 50%, black 55%, transparent 80%)",
-                WebkitMaskImage:
-                  "radial-gradient(circle at 50% 50%, black 55%, transparent 80%)",
-              }}
+              className="block h-auto w-full"
             />
           </div>
         </div>
@@ -178,10 +159,6 @@ export function Hero() {
             mounted ? "opacity-100" : "opacity-0"
           }`}
         >
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full rounded-full bg-[#D4FF3A] opacity-60 animate-ping" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#D4FF3A]" />
-          </span>
           <span className="tracking-wide leading-relaxed">{hero.status}</span>
         </div>
       </Container>

@@ -40,7 +40,7 @@ export function HowWeBuild() {
                 className="relative"
               >
                 <div className="flex items-center gap-3">
-                  <div className="relative z-10 w-4 h-4 rounded-full bg-[#0A0A0B] border border-white/20 flex items-center justify-center">
+                  <div className="relative z-10 w-4 h-4 rounded-full bg-[#000000] border border-white/20 flex items-center justify-center">
                     <div className="w-1.5 h-1.5 rounded-full bg-[#D4FF3A] shadow-[0_0_10px_#D4FF3A]" />
                   </div>
                   <div className="font-mono text-[11px] text-white/40 tracking-widest">
@@ -73,7 +73,7 @@ export function HowWeBuild() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="relative"
               >
-                <div className="absolute -left-[22px] top-1 w-3 h-3 rounded-full bg-[#0A0A0B] border border-white/20 flex items-center justify-center">
+                <div className="absolute -left-[22px] top-1 w-3 h-3 rounded-full bg-[#000000] border border-white/20 flex items-center justify-center">
                   <div className="w-1 h-1 rounded-full bg-[#D4FF3A]" />
                 </div>
                 <div className="font-mono text-[11px] text-white/40 tracking-widest">

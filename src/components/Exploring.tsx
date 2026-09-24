@@ -38,7 +38,7 @@ export function Exploring() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="group relative bg-[#0A0A0B] p-6 transition-colors hover:bg-[#0F0F12] sm:p-7"
+                className="group relative bg-[#000000] p-6 transition-colors hover:bg-[#0F0F12] sm:p-7"
               >
                 <div className="flex items-center justify-between">
                   <span className="font-mono text-[11px] text-white/40">

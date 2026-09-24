@@ -40,7 +40,7 @@ export function WhatWeDo() {
                   delay: i * 0.08,
                   ease: [0.2, 0.7, 0.2, 1],
                 }}
-                className="group relative h-full bg-[#0A0A0B] p-6 transition-colors duration-500 hover:bg-[#0F0F12] sm:p-8 md:p-10"
+                className="group relative h-full bg-[#000000] p-6 transition-colors duration-500 hover:bg-[#0F0F12] sm:p-8 md:p-10"
               >
                 <div className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-[#D4FF3A]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 <div className="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-white/80 group-hover:text-[#D4FF3A] group-hover:border-[#D4FF3A]/30 transition-colors">

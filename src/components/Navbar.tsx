@@ -22,7 +22,7 @@ export function Navbar() {
           transition-all duration-500 ease-out
           ${
             scrolled
-              ? "py-2 px-3 sm:px-4 bg-[#0A0A0B]/75 backdrop-blur-xl border border-white/[0.08] rounded-full shadow-[0_10px_40px_-20px_rgba(0,0,0,0.9)]"
+              ? "py-2 px-3 sm:px-4 bg-[#000000]/75 backdrop-blur-xl border border-white/[0.08] rounded-full shadow-[0_10px_40px_-20px_rgba(0,0,0,0.9)]"
               : "py-2.5 px-3.5 sm:py-3 sm:px-5 bg-white/[0.02] backdrop-blur-sm border border-white/[0.04] rounded-2xl"
           }
         `}

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #0a0a0b;
+  --color-bg: #000000;
   --color-surface: #111113;
   --color-surface-2: #17171a;
   --color-border: rgba(255, 255, 255, 0.08);
@@ -18,14 +18,14 @@
 
 html {
   scroll-behavior: smooth;
-  background: #0a0a0b;
+  background: #000000;
   color-scheme: dark;
 }
 
 body {
   margin: 0;
   font-family: var(--font-sans);
-  background: #0a0a0b;
+  background: #000000;
   color: #f5f5f7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -44,7 +44,7 @@ body {
   height: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0a0b;
+  background: #000000;
 }
 ::-webkit-scrollbar-thumb {
   background: #222226;
@@ -73,6 +73,25 @@ body {
 @keyframes pulse-soft {
   0%, 100% { opacity: 0.6; }
   50% { opacity: 1; }
+}
+
+@keyframes pendant-swing {
+  0%, 100% { transform: rotate(-9deg); }
+  50% { transform: rotate(9deg); }
+}
+
+.pendant-swing {
+  width: clamp(340px, 40vw, 600px);
+  transform-origin: 50% 0;
+  animation: pendant-swing 4s ease-in-out infinite;
+  will-change: transform;
+  transition: opacity 1400ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pendant-swing {
+    animation: none;
+  }
 }
 
 .animate-drift {

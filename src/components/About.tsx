@@ -43,7 +43,7 @@ export function About() {
                 { k: "Explore", v: "Emerging technology" },
                 { k: "Ship", v: "Real, working software" },
               ].map((p) => (
-                <div key={p.k} className="bg-[#0A0A0B] p-5">
+                <div key={p.k} className="bg-[#000000] p-5">
                   <div className="text-[12px] uppercase tracking-[0.2em] text-[#D4FF3A]/90">
                     {p.k}
                   </div>

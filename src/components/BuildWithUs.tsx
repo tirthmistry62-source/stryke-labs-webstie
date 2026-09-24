@@ -72,7 +72,7 @@ export function BuildWithUs() {
                 {services.map((s, i) => (
                   <li
                     key={s}
-                    className="group flex items-center justify-between gap-2 bg-[#0A0A0B]/70 p-4 backdrop-blur transition-colors hover:bg-[#D4FF3A]/5 sm:p-5"
+                    className="group flex items-center justify-between gap-2 bg-[#000000]/70 p-4 backdrop-blur transition-colors hover:bg-[#D4FF3A]/5 sm:p-5"
                   >
                     <span className="text-[14px] text-white/85 group-hover:text-white">
                       {s}

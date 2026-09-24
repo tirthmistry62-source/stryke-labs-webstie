@@ -53,7 +53,7 @@ export const hero = {
     "We design, build, and launch software and digital products — from our own ideas to products built for others.",
   primary: { label: "Explore our work", href: "#work" },
   secondary: { label: "Build with us →", href: "#build" },
-  status: "Currently building: Vardaan+",
+  
 };
 
 export const whatWeDo = [

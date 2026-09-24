@@ -249,8 +249,8 @@ export function DeviceMock({
             "radial-gradient(closest-side, rgba(212,255,58,0.3), transparent 70%)",
         }}
       />
-      <div className="relative mx-auto w-[260px] sm:w-[290px] aspect-[9/19.5] rounded-[2.6rem] border border-white/10 bg-[#0A0A0B] p-[6px] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.9)]">
-        <div className="relative w-full h-full rounded-[2.15rem] overflow-hidden bg-[#0A0A0B]">
+      <div className="relative mx-auto w-[260px] sm:w-[290px] aspect-[9/19.5] rounded-[2.6rem] border border-white/10 bg-[#000000] p-[6px] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.9)]">
+        <div className="relative w-full h-full rounded-[2.15rem] overflow-hidden bg-[#000000]">
           {/* Dynamic island */}
           <div className="absolute top-2 left-1/2 -translate-x-1/2 z-10 w-24 h-6 rounded-full bg-black" />
           {/* Screen */}
